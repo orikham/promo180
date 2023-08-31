@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <!-- <script src="script.js" defer></script> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <audio id="backgroundSound" loop>
+        <source src="./media/song/intro.mp3" type="audio/mp3">
+    </audio>
+
+
     <title>PROMO180</title>
 </head>
 
@@ -24,68 +29,516 @@
                 <li><a href="stagiaires.html"><img src="./media/image/STAGIAIRES.png" alt="stagiaires"></a></li>
                 <li><a href="projets.html"><img src="./media/image/PROJET.png" alt="Lien 2"></a></li>
                 <li><a href="stages.html"><img src="./media/image/stages.png" alt="Lien 3"></a></li>
-                <li><a href="actualitées.html"><img src="./media/image/article.png" alt="Lien 4"></a></li>
+                <li><a href="actualités.html"><img src="./media/image/article.png" alt="Lien 4"></a></li>
                 <li><a href="index.html"><img src="./media/image/ACCUEILL.png" alt="Lien 5"></a></li>
             </ul>
         </nav>
 
-        <div class="prez">
+        <div class="prez" id="prez">
             <h1>Le blog des étudiants dev web d'OnlineFormaPro</h1>
             <p>développement-intégration-ux-ui</p>
         </div>
+
     </header>
 
     <main class="row-limit-size">
-        <section >
-            <h1>CHALLENGER</h1>
+        <section id="trombi">
+            <img id="trombiTitle" src="./media/image/titrestagiaire1.png" alt="">
 
             <div id="challenger">
 
-                <div class="studentCard">
+                <div class="studentCard" data-index="0">
                     <img src="./media/image/hamidou.png" alt="">
                     <h3>hamid</h3>
                 </div>
-                <div class="studentCard">
+                <div class="studentCard" data-index="1">
                     <img src="./media/image/beaugosse.png" alt="">
                     <h3>fréderic</h3>
                 </div>
-                <div class="studentCard">
-                    <img src="./media/image/jirka.png" alt="">
+                <div class="studentCard " data-index="2">
+                    <img src="./media/image/jirkap.png" alt="">
                     <h3>jirka</h3>
                 </div>
-                <div class="studentCard">
+                <div class="studentCard" data-index="3">
                     <img src="./media/image/angeline.png" alt="">
                     <h3>angeline</h3>
                 </div>
-                <div class="studentCard">
+                <div class="studentCard" data-index="4">
                     <img src="./media/image/profilDimitri.png" alt="">
                     <h3>dimitri</h3>
                 </div>
-                <div class="studentCard">
+                <div class="studentCard" data-index="5">
                     <img src="./media/image/najia.png" alt="">
                     <h3>najia</h3>
                 </div>
-                <div class="studentCard">
+                <div class="studentCard" data-index="6">
                     <img src="./media/image/elisa.png" alt="">
                     <h3>élisa</h3>
                 </div>
-                <div class="studentCard">
+                <div class="studentCard" data-index="7">
                     <img src="./media/image/karim.png" alt="">
                     <h3>karim</h3>
                 </div>
-                <div class="studentCard">
+                <div class="studentCard" data-index="8">
                     <img src="./media/image/alex.png" alt="">
                     <h3>alexandre</h3>
                 </div>
-                <div class="studentCard">
+                <div class="studentCard" data-index="9">
                     <img src="./media/image/profilWalesca.png" alt="">
                     <h3>walesca</h3>
                 </div>
 
             </div>
+
+
+            <div id="plaquettes">
+                <div class="detailstudent" data-index="0">
+                    <div class="infoGauche">
+                        <img src="./media/image/hamidou.png" alt="">
+                        <div class="iconeRsocial">
+                            <a href="https://www.linkedin.com/in/hamid-achahboune-0332b9226/" target="_blank"> <img src="./media/icone/ideed.svg"alt=""></a>
+                            <a href="#" target="_blank"><img src="./media/icone/github-mark.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="infoDroite">
+                        <p class="intro">Salut, je suis Hamid, un développeur web passionné par l'art de créer des sites
+                            interactifs. Avec une solide expérience dans le développement front-end et back-end, je
+                            fusionne l'esthétique et la fonctionnalité pour offrir des expériences utilisateur
+                            exceptionnelles. Toujours à l'affût des dernières tendances technologiques, je suis prêt à
+                            transformer vos idées en réalité en utilisant les langages comme HTML, CSS, JavaScript et
+                            bien plus encore.
+                        </p>
+
+                        <h3>skills</h3>
+
+                        <div class="ficheTechnique">
+
+                            <p>Style plutôt : </p>
+                            <p>Points forts : </p>
+                            <p>Technologie préférée : </p>
+                            <p>Points faibles :
+                                longtemps</p>
+                            <p>Technologie qui rend malade : </p>
+
+
+
+
+
+                        </div>
+
+                        <div class="liens">
+                            <a href="" target="_blank">Son Portfolio :
+                                dimitrijohan.fr</a>
+                            <a href="./media.pdf" download>Consultez et téléchargez son CV</a>.
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="detailstudent" data-index="1">
+                    <div class="infoGauche"> <img src="./media/image/beaugosse.png" alt="">
+                        <div class="iconeRsocial">
+                            <a href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-favreau/" target="_blank"> <img src="./media/icone/ideed.svg"alt=""></a>
+                            <a href="#" target="_blank"><img src="./media/icone/github-mark.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="infoDroite">
+
+                        <p class="intro">Bonjour, c'est Frédéric, développeur web avec une inclination pour
+                            l'optimisation. Je crée des plateformes web performantes en utilisant les meilleures
+                            pratiques de développement. Ma passion pour le codage se reflète dans chaque ligne que
+                            j'écris, que ce soit en utilisant des frameworks populaires ou en personnalisant des
+                            solutions uniques. Travaillons ensemble pour donner vie à vos visions numériques.
+                        </p>
+
+                        <h3>skills</h3>
+
+                        <div class="ficheTechnique">
+
+                            <p>Style plutôt : </p>
+                            <p>Points forts : </p>
+                            <p>Technologie préférée : </p>
+                            <p>Points faibles :
+                                longtemps</p>
+                            <p>Technologie qui rend malade : </p>
+
+
+
+
+
+                        </div>
+
+                        <div class="liens">
+                            <a href="http://dimitrijohan.fr/portFolio/" target="_blank">Son Portfolio :
+                                dimitrijohan.fr</a>
+                            <a href="./media/cvfinal.pdf" download>Consultez et téléchargez son CV</a>.
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="detailstudent" data-index="2">
+                    <div class="infoGauche"> <img src="./media/image/jirkap.png" alt="">
+                        <div class="iconeRsocial">
+                            <a href="https://www.linkedin.com/in/jiri-fischer-453529101/" target="_blank"> <img src="./media/icone/ideed.svg"alt=""></a>
+                            <a href="#" target="_blank"><img src="./media/icone/github-mark.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="infoDroite">
+                        <p class="intro">Salutations ! Jirka ici, développeur web polyvalent. Mon parcours m'a permis
+                            d'explorer divers domaines du développement, des applications web aux sites e-commerce. Ma
+                            curiosité insatiable me pousse à toujours apprendre et à relever de nouveaux défis. Si vous
+                            cherchez quelqu'un pour apporter innovation et expertise à votre projet, ne cherchez pas
+                            plus loin.
+                        </p>
+
+                        <h3>skills</h3>
+
+                        <div class="ficheTechnique">
+
+                            <p>Style plutôt : </p>
+                            <p>Points forts : </p>
+                            <p>Technologie préférée : </p>
+                            <p>Points faibles :
+                                longtemps</p>
+                            <p>Technologie qui rend malade : </p>
+
+
+
+
+
+                        </div>
+
+                        <div class="liens">
+                            <a href="http://dimitrijohan.fr/portFolio/" target="_blank">Son Portfolio :
+                                dimitrijohan.fr</a>
+                            <a href="./media/cvfinal.pdf" download>Consultez et téléchargez son CV</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="detailstudent" data-index="3">
+                    <div class="infoGauche">
+                        <img src="./media/image/angeline.png" alt="">
+                        <div class="iconeRsocial">
+                            <a href="https://www.linkedin.com/in/angeledev/" target="_blank"> <img src="./media/icone/ideed.svg"
+                                    alt=""></a>
+                            <a href="#"><img src="./media/icone/github-mark.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="infoDroite">
+
+                        <p class="intro">Hey là-bas, je suis Angeline, une développeuse web passionnée par
+                            l'accessibilité en ligne. Je m'efforce de rendre le web inclusif pour tous en créant des
+                            interfaces conviviales et faciles à utiliser. Mon engagement envers le développement durable
+                            et les normes WCAG me guide dans la création de sites qui touchent la vie de tous, sans
+                            exception.
+                        </p>
+
+                        <h3>skills</h3>
+
+                        <div class="ficheTechnique">
+
+                            <p>Style plutôt : </p>
+                            <p>Points forts : </p>
+                            <p>Technologie préférée : </p>
+                            <p>Points faibles :
+                                longtemps</p>
+                            <p>Technologie qui rend malade : </p>
+
+
+
+
+
+                        </div>
+
+                        <div class="liens">
+                            <a href="http://dimitrijohan.fr/portFolio/" target="_blank">Son Portfolio :
+                                dimitrijohan.fr</a>
+                            <a href="./media/cvfinal.pdf" download>Consultez et téléchargez son CV</a>.
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="detailstudent" data-index="4">
+
+                    <div class="infoGauche">
+                        <img src="./media/image/profilDimitri.png" alt="">
+                        <div class="iconeRsocial">
+                            <a href="www.linkedin.com/in/dimitrijohan" target="_blank"> <img src="./media/icone/ideed.svg"alt=""></a>
+                            <a href="#" target="_blank"><img src="./media/icone/github-mark.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="infoDroite">
+                        <p class="intro">Née le 21 octobre 1989 d’une mère caféinomane et d’un père colateur il se
+                            passionne très tôt pour le code mais il ne le sait pas encore...... .Des années plus tard et
+                            la passion trouvé il intègre en 2022 la formation developpeur web chez OnlineFormaPro.Fêtard
+                            insoupconné mais travailleur acharné il saura faire ses preuves et être éfficace...
+                        </p>
+                        <h3>skills</h3>
+                        <div class="ficheTechnique">
+
+                            <p>Style plutôt : Back-end </p>
+                            <p>Points forts : Réactif et Volontaire</p>
+                            <p>Technologie préférée : PHP et SQL</p>
+                            <p>Points faibles : Montre difficilement sa curiosité, Comprend vite mais faut expliquer
+                                longtemps</p>
+                            <p>Technologie qui rend malade : CSS</p>
+
+
+
+
+
+                        </div>
+
+                        <div class="liens">
+                            <a href="http://dimitrijohan.fr/portFolio/" target="_blank">Son Portfolio :
+                                dimitrijohan.fr</a>
+                            <a href="./media/cvfinal.pdf" download>Consultez et téléchargez son CV</a>.
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="detailstudent" data-index="5">
+
+                    <div class="infoGauche">
+                        <img src="./media/image/najia.png" alt="">
+                        <div class="iconeRsocial"> 
+                            <a href="https://www.linkedin.com/in/najia-bek-209938118/" target="_blank"> <img src="./media/icone/ideed.svg"alt=""></a>
+                            <a href="#" target="_blank"><img src="./media/icone/github-mark.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="infoDroite">
+
+                        <p class="intro">Bonjour, Najia à votre service, développeuse web avec une touche artistique.
+                            Mes compétences en design et en codage se combinent pour donner naissance à des sites web
+                            esthétiquement plaisants et fonctionnels. Je crois en l'importance de raconter une histoire
+                            à travers le design, tout en veillant à ce que chaque aspect technique soit parfaitement
+                            orchestré.
+                        </p>
+
+                        <h3>skills</h3>
+
+                        <div class="ficheTechnique">
+
+                            <p>Style plutôt : </p>
+                            <p>Points forts : </p>
+                            <p>Technologie préférée : </p>
+                            <p>Points faibles :
+                                longtemps</p>
+                            <p>Technologie qui rend malade : </p>
+
+
+
+
+
+                        </div>
+
+                        <div class="liens">
+                            <a href="http://dimitrijohan.fr/portFolio/" target="_blank">Son Portfolio :
+                                dimitrijohan.fr</a>
+                             <a href="./media/cvfinal.pdf" download>Consultez et téléchargez son CV</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="detailstudent" data-index="6">
+                    <div class="infoGauche">
+                        <img src="./media/image/elisa.png" alt="">
+                        <div class="iconeRsocial"> 
+                            <a href="https://www.linkedin.com/in/elisa-ravinet-2a6384266/" target="_blank"> <img src="./media/icone/ideed.svg"alt=""></a>
+                            <a href="#" target="_blank"><img src="./media/icone/github-mark.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="infoDroite">
+
+                        <p class="intro">Enchantée, je suis Elisa, développeuse web dévouée à la simplicité et à
+                            l'efficacité. Je crois en la puissance de la clarté dans la conception, en créant des
+                            interfaces épurées qui facilitent la navigation. Mon expérience approfondie dans le
+                            développement front-end me permet d'apporter une touche de fraîcheur à chaque projet sur
+                            lequel je travaille.
+                        </p>
+
+                        <h3>skills</h3>
+
+                        <div class="ficheTechnique">
+
+                            <p>Style plutôt : </p>
+                            <p>Points forts : </p>
+                            <p>Technologie préférée : </p>
+                            <p>Points faibles :
+                                longtemps</p>
+                            <p>Technologie qui rend malade : </p>
+
+
+
+
+
+                        </div>
+
+                        <div class="liens">
+                            <a href="http://dimitrijohan.fr/portFolio/" target="_blank">Son Portfolio :
+                                dimitrijohan.fr</a>
+                            <a href="./media/cvfinal.pdf" download>Consultez et téléchargez son CV</a>.
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="detailstudent" data-index="7">
+                    <div class="infoGauche">
+                        <img src="./media/image/karim.png" alt="">
+                        <div class="iconeRsocial"> 
+                            <a href="https://www.linkedin.com/in/karim-ryahi-858a13215/" target="_blank"> <img src="./media/icone/ideed.svg"alt=""></a>
+                            <a href="#" target="_blank"><img src="./media/icone/github-mark.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="infoDroite">
+
+                        <p class="intro">Salut, je suis Karim, un développeur web orienté résultats. Mon objectif
+                            principal est de transformer vos idées en solutions numériques tangibles. Avec une expertise
+                            approfondie dans le développement full-stack, je suis capable de gérer tous les aspects du
+                            processus de création web. Faisons équipe pour concrétiser vos ambitions en ligne.
+                        </p>
+
+                        <h3>skills</h3>
+
+                        <div class="ficheTechnique">
+
+                            <p>Style plutôt : </p>
+                            <p>Points forts : </p>
+                            <p>Technologie préférée : </p>
+                            <p>Points faibles :
+                                longtemps</p>
+                            <p>Technologie qui rend malade : </p>
+
+
+
+
+
+                        </div>
+
+                        <div class="liens">
+                            <a href="http://dimitrijohan.fr/portFolio/" target="_blank">Son Portfolio :
+                                dimitrijohan.fr</a>
+                            <a href="./media/cvfinal.pdf" download>Consultez et téléchargez son CV</a>.
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="detailstudent" data-index="8">
+                    <div class="infoGauche">
+                        <img src="./media/image/alex.png" alt="">
+                        <div class="iconeRsocial"> 
+                            <a href="https://www.linkedin.com/in/alexandre-sequeira-258a29137/" target="_blank"> <img src="./media/icone/ideed.svg"alt=""></a>
+                            <a href="#" target="_blank"><img src="./media/icone/github-mark.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="infoDroite">
+
+                        <p class="intro">Bonjour, c'est Alexandre, développeur web passionné par l'innovation. Ma quête
+                            constante de nouvelles technologies et de méthodes de développement me pousse à créer des
+                            expériences en ligne uniques. Avec une expérience diversifiée dans la création
+                            d'applications web, je suis prêt à relever vos défis de développement les plus ambitieux.
+                        </p>
+
+                        <h3>skills</h3>
+
+                        <div class="ficheTechnique">
+
+                            <p>Style plutôt : </p>
+                            <p>Points forts : </p>
+                            <p>Technologie préférée : </p>
+                            <p>Points faibles :
+                                longtemps</p>
+                            <p>Technologie qui rend malade : </p>
+
+
+
+
+
+                        </div>
+
+                        <div class="liens">
+                            <a href="http://dimitrijohan.fr/portFolio/" target="_blank">Son Portfolio :
+                                dimitrijohan.fr</a>
+                            <a href="./media/cvfinal.pdf" download>Consultez et téléchargez son CV</a>.
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="detailstudent" data-index="9">
+                    <div class="infoGauche">
+                        <img src="./media/image/profilWalesca.png" alt="">
+                        <div class="iconeRsocial">
+                            <a href="https://www.linkedin.com/in/walesca-telemaque-36403a27b/" target="_blank"> <img src="./media/icone/ideed.svg"alt=""></a>
+                            <a href="#" target="_blank"><img src="./media/icone/github-mark.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="infoDroite">
+
+                        <p class="intro">Bien le bonjour, c'est Walesca, développeuse web passionnée par la résolution
+                            de problèmes. Chaque projet est une énigme que j'adore résoudre en utilisant un mélange de
+                            compétences techniques et de créativité. Mon approche réfléchie du développement web
+                            garantit des solutions robustes et durables qui repoussent les limites de ce qui est
+                            possible en ligne.
+                        </p>
+
+                        <h3>skills</h3>
+
+                        <div class="ficheTechnique">
+
+                            <p>Style plutôt : </p>
+                            <p>Points forts : </p>
+                            <p>Technologie préférée : </p>
+                            <p>Points faibles :
+                                longtemps</p>
+                            <p>Technologie qui rend malade : </p>
+
+
+
+
+
+                        </div>
+
+                        <div class="liens">
+                            <a href="http://dimitrijohan.fr/portFolio/" target="_blank">Son Portfolio :
+                                dimitrijohan.fr</a>
+                         <a href="./media/cvfinal.pdf" download>Consultez et téléchargez son CV</a>.
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
         </section>
     </main>
-   
+
 </body>
 
 </html>

@@ -20,6 +20,21 @@ a {
     src: url(./media/font/NEONLEDLight.otf);
 }
 
+@font-face {
+    font-family: 'XmasTerpiece';
+    src: url(./media/font/XmasTerpiece.ttf);
+}
+
+@font-face {
+    font-family: 'XmasTerpieceSwashes';
+    src: url(./media/font/XmasTerpieceSwashes.ttf);
+}
+
+@font-face {
+    font-family: 'RetroGaming';
+    src: url(./media/font/Retro\ Gaming.ttf);
+}
+
 body {
 
     font-family: Arial, sans-serif;
@@ -27,38 +42,37 @@ body {
     background-repeat: repeat;
 }
 
+/*debut du header*/
+
 header {
     width: 100%;
-    height: 250px;
+    height: 200px;
     text-align: center;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
 
 #divlogo {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     cursor: pointer;
 }
 
 #logoVideo {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
 
 #menu {
     display: none;
-    margin-left: 250px;
-    margin-top: -250px;
-
-   
-
-    
-
-    
-
-    
-
+    position: absolute;
+    top: 10px;
+    left: 17%;
+    z-index: 2;
 }
 
 #menu ul {
@@ -82,51 +96,58 @@ header {
 }
 
 #menu img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
+}
+
+#menu.affiche {
+    display: block;
+    animation: deroulementmenu 2.5s forwards;
 }
 
 .prez {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 250px;
-    margin-top: -250px;
     width: 80%;
-    height: 250px;
+    height: 200px;
     background-color: #653bb8;
+    position: absolute;
+    left: 17%;
+}
 
-    
-
-   
-
+#prez.retourPrez {
+    display: block;
+    width: 80%
 }
 
 .prez h1 {
     width: 100%;
-    height: 250px;
+    height: 200px;
     font-family: NEONLEDLight;
     font-size: 4rem;
     color: #dc3c4d;
-    text-shadow: 2px 2px 4px #00ffff, -2px -2px 4px #ffffff;
-
-    margin-top: 20px;
+    
+    margin-bottom: 15px;
+    
 
 }
 
 .prez p {
 
     width: 100%;
-    height: 250px;
+    height: 50px;
     font-family: NEONLEDLight;
     font-size: 2rem;
     color: #dc3c4d;
-    text-shadow: 2px 2px 4px #ffffff, -2px -2px 4px #00ffff;
-    margin-top: 50px;
+    /* text-shadow: 2px 2px 4px #ffffff, -2px -2px 4px #00ffff; */
+    
+    
 
 }
+/*fin du header*/
 
+
+/*debut homepage*/
 #sectionArticleGauche {
     float: left;
     width: 700px;
@@ -194,6 +215,350 @@ header {
     background-color: #ffffff;
     color: #653bb8;
     
+}
+/*fin homepage*/
+
+/* debut page stagiaire*/
+
+#trombi{
+    width: 90%;
+}
+
+#trombi #trombiTitle{
+    width: 500px;
+    height: 50px;
+    margin: 25px 0;
+}
+
+
+
+#challenger{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    
+}
+
+.studentCard{
+    width: 200px;
+    height: 200px;
+    background-color: #653bb8;
+    margin: 10px auto;
+
+}
+
+.studentCard img{
+    width: 200px;
+    height: 150px;
+}
+
+.studentCard h3{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: #653bb8;
+    font-family: RetroGaming ;
+    
+}
+
+.studentCard.hovered {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.5), 0 0 20px 10px rgba(255, 0, 0, 0.5); 
+}
+
+/* fiche technique */
+#plaquettes {
+    width: 800px;
+    height: 500px;
+    
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+    
+    
+}
+
+.detailstudent {
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    background-color: #653bb8;
+    display: flex;
+    
+}
+
+.detailstudent .infoGauche{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoGauche img {
+    width: 250px;
+    height: 300px;
+    margin: 25px auto;   
+}
+
+.iconeRsocial{
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.iconeRsocial img{
+    width: 100px;
+    height: 100px;
+    
+}
+
+.detailstudent .infoDroite{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.infoDroite .intro {
+    width: 500px;
+    height: 200px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    font-family: XmasTerpieceSwashes ;
+}
+
+.infoDroite .ficheTechnique {
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.ficheTechnique p{
+    width: 250px;
+    font-family: RetroGaming ;
+    font-size: 0.5rem;
+    text-align: start;
+    
+}
+
+.infoDroite .liens {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+
+
+
+/*fin stagiares*/  
+/*début page projets*/
+
+#projets{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projets .introduction{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-family: NEONLEDLight;
+    text-align: center;
+    background-color: #653bb8;
+    margin: 20px auto ;
+    color:#dc3c4d ;
+    
+}
+
+.cardsProjetSolo{
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+.cardsProjetGroupe{
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+.imgProjet{
+    width: 500px;
+    height: 300px;
+
+}
+
+.imgProjet img{
+    width: 500px;
+    height: 300px;
+
+}
+
+.infoProjet{
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #653bb8;
+}
+
+
+
+ h3{
+    display: flex;
+    width: 500px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    color: #00ffff;
+    font-family: XmasTerpieceSwashes;
+    
+}
+
+.distanciation{ 
+    width: 500px;
+    height: 150px;
+    white-space: pre-line;
+    color: #00ffff;
+    padding-left: 10px;
+    font-family: XmasTerpieceSwashes;
+}
+
+.distanciation span{
+
+    font-family: XmasTerpiece;
+}
+
+
+ .resume{
+    width: 450px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    color: #00ffff;
+    padding-left: 10px;
+    
+    font-family: XmasTerpieceSwashes;
+
+}
+
+
+
+
+
+/*fin page projets*/
+
+/*début de pas actualités*/
+
+.actua {
+    text-align: center; 
+    padding: 20px; 
+}
+
+#articles {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+
+#articles .article {
+    width: 250px;
+    height: auto;
+    margin: 10px;
+    background-color: #6E51B9; /* Couleur de fond pour chaque article */
+    border: 1px solid #653bb8; /* Bordure pour chaque article */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre pour la profondeur */
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition pour l'effet au survol */
+    cursor: pointer;
+}
+
+@keyframes blink {
+    0%, 100% {
+        border-color: #ff0000; /* Rouge */
+    }
+    50% {
+        border-color: #00ff00; /* Vert */
+    }
+}
+
+#articles .article:hover {
+    animation: blink 1s infinite; /* Applique l'animation de clignotement */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#articles .article h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #8790BA
+}
+
+#articles .article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+#articles .article p {
+    font-size: 14px;
+    color: #8790BA;
+}
+
+
+/*fin de page actualités*/
+
+
+
+
+@keyframes retourPrez {
+    from {
+        
+        
+    }
+    to {
+       
+        opacity: 0;
+        
+        
+    }
+}
+
+@keyframes deroulementmenu {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+        
+    }
 }
 
 

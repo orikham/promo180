@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -14,33 +15,73 @@ a {
 }
 
 @font-face {
+  font-family: "Titania-Outline";
+  src: url(./media/font/Titania-Outline.ttf);
+}
+@font-face {
+  font-family: "Titania-Regular";
+  src: url(./media/font/Titania-Regular.ttf);
+}
+@font-face {
+  font-family: "Titania-Shadow";
+  src: url(./media/font/Titania-Shadow.ttf);
+}
+@font-face {
+  font-family: "NeolandSerif";
+  src: url(./media/font/Neoland\ Serif.ttf);
+}
+@font-face {
+  font-family: "Storyboo";
+  src: url(./media/font/Storyboo.TTF);
+}
+@font-face {
   font-family: "NEONLEDLight";
   src: url(./media/font/NEONLEDLight.otf);
+}
+@font-face {
+  font-family: "XmasTerpiece";
+  src: url(./media/font/XmasTerpiece.ttf);
+}
+@font-face {
+  font-family: "XmasTerpieceSwashes";
+  src: url(./media/font/XmasTerpieceSwashes.ttf);
+}
+@font-face {
+  font-family: "RetroGaming";
+  src: url(./media/font/Retro\ Gaming.ttf);
 }
 body {
   font-family: Arial, sans-serif;
   background-image: url(./media/image/fond.png);
   background-repeat: repeat;
+  /*debut du header*/
+  /*fin du header*/
 }
 body > header {
   width: 100%;
-  height: 250px;
+  height: 200px;
   text-align: center;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 body > header > #divlogo {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   cursor: pointer;
 }
 body > header > #divlogo > #logoVideo {
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 200px;
 }
 body > header > #menu {
+  position: absolute;
+  top: 10px;
+  left: 17%;
+  z-index: 2;
   display: none;
-  margin-left: 250px;
-  margin-top: -250px;
 }
 body > header > #menu > ul {
   list-style: none;
@@ -53,37 +94,50 @@ body > header > #menu > ul > li > a {
   text-decoration: none;
 }
 body > header > #menu > ul > li > a > img {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
-body > header .prez {
+body > header > #menu.affiche {
+  display: block;
+  animation: deroulementmenu 2.5s forwards;
+}
+body > header > .prez {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-left: 250px;
-  margin-top: -250px;
   width: 80%;
-  height: 250px;
+  height: 200px;
   background-color: #653bb8;
+  position: absolute;
+  left: 17%;
 }
-body > header .prez > h1 {
+body > header > .prez > h1 {
   width: 100%;
-  height: 250px;
-  font-family: NEONLEDLight;
+  height: 200px;
+  font-family: Titania-Regular;
   font-size: 4rem;
   color: #dc3c4d;
-  text-shadow: 2px 2px 4px #00ffff, -2px -2px 4px #ffffff;
-  margin-top: 20px;
+  padding-top: 15px;
 }
-body > header .prez > p {
+body > header > .prez > p {
   width: 100%;
-  height: 250px;
-  font-family: NEONLEDLight;
+  height: 50px;
+  font-family: Titania-Regular;
   font-size: 2rem;
   color: #dc3c4d;
-  text-shadow: 2px 2px 4px #ffffff, -2px -2px 4px #00ffff;
-  margin-top: 50px;
+}
+body > header > #prez.retourPrez {
+  display: flex;
+  width: 80%;
+}
+body > main {
+  /*debut homepage*/
+  /*fin homepage*/
+  /* debut page stagiaire*/
+  /*fin stagiares*/
+  /*début page projets*/
+  /*fin page projets*/
+  /*début de pas actualités*/
+  /*fin de page actualités*/
 }
 body > main > section {
   width: 100%;
@@ -125,4 +179,336 @@ body > main > section > #sectionArticleDroite > p > span {
 }
 body > main > section > #sectionArticleDroite > img {
   width: 400px;
+}
+body > main > section > #sectionArticleDroite > h3 {
+  width: 400px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #653bb8;
+}
+body > main > #trombi {
+  width: 90%;
+}
+body > main > #trombi > #trombiTitle {
+  width: 500px;
+  height: 50px;
+  margin: 25px 0;
+}
+body > main > #trombi > #challenger {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body > main > #trombi > #challenger > .studentCard {
+  width: 200px;
+  height: 200px;
+  background-color: #653bb8;
+  margin: 10px auto;
+}
+body > main > #trombi > #challenger > .studentCard > img {
+  width: 200px;
+  height: 150px;
+}
+body > main > #trombi > #challenger > .studentCard > h3 {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: #653bb8;
+  font-family: RetroGaming;
+}
+body > main > #trombi > #challenger > .studentCard.hovered {
+  box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.5), 0 0 20px 10px rgba(255, 0, 0, 0.5);
+}
+body > main > #trombi > #plaquettes {
+  width: 900px;
+  height: 500px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: none;
+}
+body > main > #trombi > #plaquettes > .detailstudent {
+  position: absolute;
+  width: 900px;
+  height: 500px;
+  background-color: #653bb8;
+  display: flex;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoGauche {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoGauche > img {
+  width: 250px;
+  height: 300px;
+  margin: 25px auto;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoGauche > .iconeRsocial {
+  width: 250px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoGauche > .iconeRsocial > a {
+  width: 100px;
+  height: 100px;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoGauche > .iconeRsocial > a > img {
+  width: 100px;
+  height: 100px;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoDroite {
+  width: 600px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-left: 1px solid black;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoDroite > .intro {
+  width: 500px;
+  height: 200px;
+  display: flex;
+  margin: 25px auto;
+  font-family: Titania-Regular;
+  color: #dc3c4d;
+  font-size: 1.1rem;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoDroite > h3 {
+  width: 600px;
+  font-family: RetroGaming;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoDroite > .ficheTechnique {
+  width: 600px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoDroite > .ficheTechnique > p {
+  width: 250px;
+  font-family: RetroGaming;
+  font-size: 0.7rem;
+  text-align: start;
+  margin: 25px auto;
+  display: flex;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoDroite > .liens {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body > main > #trombi > #plaquettes > .detailstudent > .infoDroite > .liens > a {
+  color: #dc3c4d;
+}
+body > main > #projets {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body > main > #projets > .introduction {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-family: NEONLEDLight;
+  text-align: center;
+  background-color: #653bb8;
+  margin: 20px auto;
+  color: #dc3c4d;
+}
+body > main > #projets > .cardsProjetSolo {
+  width: 1000px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+}
+body > main > #projets > .cardsProjetSolo > .imgProjet {
+  width: 500px;
+  height: 300px;
+}
+body > main > #projets > .cardsProjetSolo > .imgProjet > img {
+  width: 500px;
+  height: 300px;
+}
+body > main > #projets > .cardsProjetSolo > .infoProjet {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #653bb8;
+}
+body > main > #projets > .cardsProjetSolo > .infoProjet > h3 {
+  display: flex;
+  width: 500px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  color: #00ffff;
+  font-family: XmasTerpieceSwashes;
+}
+body > main > #projets > .cardsProjetSolo > .infoProjet > .distanciation {
+  width: 500px;
+  height: 150px;
+  white-space: pre-line;
+  color: #00ffff;
+  padding-left: 10px;
+  font-family: XmasTerpieceSwashes;
+}
+body > main > #projets > .cardsProjetSolo > .infoProjet > .distanciation > span {
+  font-family: XmasTerpiece;
+}
+body > main > #projets > .cardsProjetSolo > .infoProjet > .resume {
+  width: 450px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  color: #00ffff;
+  padding-left: 10px;
+  font-family: XmasTerpieceSwashes;
+}
+body > main > #projets > .cardsProjetGroupe {
+  width: 1000px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+}
+body > main > #projets > .cardsProjetGroupe > .imgProjet {
+  width: 500px;
+  height: 300px;
+}
+body > main > #projets > .cardsProjetGroupe > .imgProjet > img {
+  width: 500px;
+  height: 300px;
+}
+body > main > #projets > .cardsProjetGroupe > .infoProjet {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #653bb8;
+}
+body > main > #projets > .cardsProjetGroupe > .infoProjet > h3 {
+  display: flex;
+  width: 500px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  color: #00ffff;
+  font-family: XmasTerpieceSwashes;
+}
+body > main > #projets > .cardsProjetGroupe > .infoProjet > .distanciation {
+  width: 500px;
+  height: 150px;
+  white-space: pre-line;
+  color: #00ffff;
+  padding-left: 10px;
+  font-family: XmasTerpieceSwashes;
+}
+body > main > #projets > .cardsProjetGroupe > .infoProjet > .distanciation > span {
+  font-family: XmasTerpiece;
+}
+body > main > #projets > .cardsProjetGroupe > .infoProjet > .resume {
+  width: 450px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  color: #00ffff;
+  padding-left: 10px;
+  font-family: XmasTerpieceSwashes;
+}
+body > main > .actua {
+  text-align: center;
+  padding: 20px;
+}
+body > main > .actua > #articles {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+body > main > .actua > #articles > .article {
+  width: 250px;
+  height: auto;
+  margin: 10px;
+  background-color: #6E51B9;
+  border: 1px solid #653bb8;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+body > main > .actua > #articles > .article > h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #8790BA;
+}
+body > main > .actua > #articles > .article > img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+body > main > .actua > #articles > .article > p {
+  font-size: 14px;
+  color: #8790BA;
+}
+body > main > .epilepsie {
+  width: 10000px;
+  height: 10000px;
+  background-color: aliceblue;
+  border: 10px solid black;
+  display: flex;
+  text-align: center;
+  right: -1000px;
+}
+body > main > .epilepsie:hover {
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  0%, 100% {
+    background-color: hsl(64, 100%, 50%); /* Rouge */
+  }
+  50% {
+    background-color: #ff0000; /* Vert */
+  }
+  75% {
+    background-color: #00ff00;
+  }
+}
+@keyframes retourPrez {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes deroulementmenu {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
