@@ -114,7 +114,7 @@ function lancementAnimation(element) {
         currentColorIndex = 1 - currentColorIndex; // Alterner entre les couleurs
     }
 
-    var blinkInterval = setInterval(toggleColor, 200); // Changer toutes les 200 ms
+    var blinkInterval = setInterval(toggleColor, 2000); // Changer toutes les 2000 ms
 
     // // Arrêter l'animation lorsque le survol se termine
     element.addEventListener('mouseout', function () {
@@ -122,16 +122,15 @@ function lancementAnimation(element) {
         element.style.backgroundColor = ''; // Réinitialiser la couleur
     });
 
-
+    document.addEventListener('DOMContentLoaded', function () {
+        const articles = document.querySelectorAll(".article")
+        // Ajouter un écouteur d'événement pour démarrer l'animation au survol
+        articles.forEach(function (article) {
+            article.addEventListener('mouseover', function () {
+                lancementAnimation(article);
+            });
+        });
+    });
 
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    const articles = document.querySelectorAll(".article")
-    // Ajouter un écouteur d'événement pour démarrer l'animation au survol
-    articles.forEach(function (article) {
-        article.addEventListener('mouseover', function () {
-            lancementAnimation(article);
-        });
-    });
-});
